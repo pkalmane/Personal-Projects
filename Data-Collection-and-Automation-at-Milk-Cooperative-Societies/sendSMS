@@ -1,0 +1,142 @@
+'------------------------------------------------------
+'frmNewData.inc
+'------------------------------------------------------
+#INCLUDE ONCE "Globals.inc"
+%WAITDELAY= 1000
+
+
+
+'------------------------------------------------------------------------------
+
+FUNCTION SendSMS(sPhoneNumber AS STRING, sMessage AS STRING) AS LONG
+LOCAL s1 ,s2,s3,s4 AS STRING
+LOCAL l1 AS LONG
+
+IF lComportfileModem=0 THEN
+    MSGBOX "Comport Not open",,$AppTitle
+    EXIT FUNCTION
+END IF
+
+'l1=ReadComport
+'l1=ReadComport
+'l1=ReadComport
+
+'----------------------------------------AT+CGMI? - read Modem ID
+s1="AT"+$CRLF
+COMM SEND #lComportFileModem,s1
+
+SLEEP %WAITDELAY
+l1=ReadComport
+IF l1=0 THEN
+    MSGBOX "Modem Not OK?",,$AppTitle
+    EXIT FUNCTION
+END IF
+'----------------------------------------AT+CGMI? - read Modem ID
+s1="ATD+91"+sPhoneNumber+";"+$CRLF
+COMM SEND #lComportFileModem,s1
+SLEEP %WAITDELAY
+l1=ReadComport
+IF l1=0 THEN
+    MSGBOX "Modem Not OK?",,$AppTitle
+    EXIT FUNCTION
+END IF
+MSGBOX "Phone number "+sPhoneNumber+" Called",,$AppTitle
+
+'----------------------------------------AT+CGMI? - read Modem ID
+s1="AT+CGMI?"+$CRLF
+COMM SEND #lComportFileModem,s1
+SLEEP %WAITDELAY
+l1=ReadComport
+IF l1=0 THEN
+    MSGBOX "Modem Not OK?",,$AppTitle
+    EXIT FUNCTION
+END IF
+'----------------------------------------AT+CGMM? - read model ID
+s1="AT+CGMM?"+$CRLF
+COMM SEND #lComportFileModem,s1
+SLEEP %WAITDELAY
+l1=ReadComport
+IF l1=0 THEN
+    MSGBOX "Modem Not OK?",,$AppTitle
+    EXIT FUNCTION
+END IF
+
+'----------------------------------------AT+CGMR? - read Revision
+s1="AT+CGMR?"+$CRLF
+COMM SEND #lComportFileModem,s1
+SLEEP %WAITDELAY
+l1=ReadComport
+IF l1=0 THEN
+    MSGBOX "Modem Not OK?",,$AppTitle
+    EXIT FUNCTION
+END IF
+
+'----------------------------------------AT+CGSN? - read Product Serial number
+s1="AT+CGSN?"+$CRLF
+COMM SEND #lComportFileModem,s1
+SLEEP %WAITDELAY
+l1=ReadComport
+IF l1=0 THEN
+    MSGBOX "Modem Not OK?",,$AppTitle
+    EXIT FUNCTION
+END IF
+
+'----------------------------------------AT+CFSN? - read Factory serial number
+s1="AT+CFSN?"+$CRLF
+COMM SEND #lComportFileModem,s1
+SLEEP %WAITDELAY
+l1=ReadComport
+IF l1=0 THEN
+    MSGBOX "Modem Not OK?",,$AppTitle
+    EXIT FUNCTION
+END IF
+
+'----------------------------------------AT+CSQ? - read Signal Strength
+s1="AT+CSQ?"+$CRLF
+COMM SEND #lComportFileModem,s1
+SLEEP %WAITDELAY
+l1=ReadComport
+IF l1=0 THEN
+    MSGBOX "Modem Not OK?",,$AppTitle
+    EXIT FUNCTION
+END IF
+
+'----------------------------------------AT+COPS? - read operator name
+s1="AT+COPS?"+$CRLF
+COMM SEND #lComportFileModem,s1
+SLEEP %WAITDELAY*5
+l1=ReadComport
+IF l1=0 THEN
+    MSGBOX "Modem Not OK?",,$AppTitle
+    EXIT FUNCTION
+END IF
+
+'----------------------------------------AT+CMGS= - Send SMS
+s1="AT+CMGS=+91"+sPhoneNumber+", "+sMessage+$CRLF
+COMM SEND #lComportFileModem,s1
+SLEEP %WAITDELAY*10
+l1=ReadComport
+IF l1=0 THEN
+    MSGBOX "Modem Not OK?",,$AppTitle
+    EXIT FUNCTION
+END IF
+
+
+
+END FUNCTION
+'-----------------------------------------------
+FUNCTION ReadComport() AS LONG
+LOCAL s1 AS STRING
+
+    IF LEN(sModemReceiveData)>0 THEN
+        s1=sModemReceiveData:sModemReceiveData=""
+        MSGBOX "Response From Modem:"+s1,,$AppTitle
+        FUNCTION=LEN(s1)
+    ELSE
+        MSGBOX "There is no Response From Modem",,$AppTitle
+
+        FUNCTION=0
+    END IF
+
+END FUNCTION
+'------------------------------------------------------------------------------
