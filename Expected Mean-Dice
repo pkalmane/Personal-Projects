@@ -1,0 +1,39 @@
+import itertools
+die = ['1', '2', '3', '4', '5', '6']
+m = []
+d = []
+sum_list = []
+product_list = []
+n = raw_input("Enter the number of dies:")
+o = raw_input("Enter the sum needed to assess:")
+sum = 0
+prod = 1
+m.append(list(itertools.product((die),repeat=int(n))))
+print m
+for j in m:
+	for a in j:
+		for s in a:
+			sum +=int(s)
+			d.append(int(s))
+		if sum == int(o):
+			sum_list.append(d)
+			d =[]
+			sum = 0
+		else:
+			sum = 0
+			d = []
+
+for j in sum_list:
+	for a in j:
+			prod *=a
+	product_list.append(prod)
+	prod = 1
+sum1 = 0
+l = 0
+for i in product_list:
+	sum1+=i
+	l+=1
+mean = 0
+mean = float(sum1)/l
+
+print "Expected Mean:" +str(mean)
