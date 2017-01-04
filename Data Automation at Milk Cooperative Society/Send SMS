@@ -1,0 +1,231 @@
+'------------------------------------------------------
+'frmNewData.inc
+'------------------------------------------------------
+#INCLUDE ONCE "Globals.inc"
+%WAITDELAY= 10
+
+'------------------------------------------------------------------------------
+'FUNCTION SendSMS(sPhoneNumber AS STRING, sMessage AS STRING) AS LONG
+'  function to send out an SMS to a given telephone number
+' input: Phone number and message that is to be sent
+' returns : nothing
+'------------------------------------------------------------------------------
+
+FUNCTION SendSMS(sPhoneNumber AS STRING, sMessage AS STRING) AS LONG
+LOCAL s1 ,s2,s3,s4 AS STRING
+LOCAL l1 AS LONG
+
+IF lComportfileModem=0 THEN
+    MSGBOX "Comport Not open",,$AppTitle
+    EXIT FUNCTION
+END IF
+
+'----------------------------------------AT+CGMI? - read Modem ID
+s1="AT"+$CRLF
+COMM SEND #lComportFileModem,s1
+sModemCommunication=sModemCommunication+s1+$CRLF
+s1=ReadComport
+IF LEN(s1)=0 THEN
+    MSGBOX "Modem Not OK 1?. SMS not sent",,$AppTitle
+    EXIT FUNCTION
+ELSE
+    sModemCommunication=sModemCommunication+s1+$CRLF
+'    msgbox "Received 1 "+s1
+END IF
+
+CONTROL SET TEXT  hDestinationFormHandle,%ID_MODEM_TEXTBOX, sModemCommunication
+
+'----------------------------------------AT+CMGS= - Send SMS
+s1="AT+CMGS="+CHR$(&H22)+sPhoneNumber+CHR$(&H22)+$CRLF
+COMM SEND #lComportFileModem,s1
+sModemCommunication=sModemCommunication+s1+$CRLF
+SLEEP 100
+s1=ReadComport
+IF LEN(s1)=0 THEN
+    MSGBOX "Modem Not OK 2?. . SMS not sent",,$AppTitle
+    EXIT FUNCTION
+ELSE
+    sModemCommunication=sModemCommunication+s1+$CRLF
+'    MSGBOX "Received 2 "+s1
+    s1=sMessage+$CTLZ
+    SLEEP 100
+    COMM SEND #lComportFileModem,s1
+    SLEEP 100
+    s1=ReadComport
+    IF LEN(s1)>0 THEN
+        sModemCommunication=sModemCommunication+s1+$CRLF
+        MSGBOX "SMS Sent to :"+sPhoneNumber,,$AppTitle
+    ELSE
+        MSGBOX "Modem Not OK 3?.  Some Error while sending SMS. SMS may not reach",,$AppTitle
+
+    END IF
+END IF
+SLEEP 100
+s1=ReadComport
+sModemCommunication=sModemCommunication+s1+$CRLF
+
+CONTROL SET TEXT  hDestinationFormHandle,%ID_MODEM_TEXTBOX, sModemCommunication
+
+END FUNCTION
+'------------------------------------------------------------------------------
+'FUNCTION SendSMSTest(sPhoneNumber AS STRING, sMessage AS STRING) AS LONG
+' test function to tets out all relevant AT commands
+' input: Phone number and message that is to be sent
+' returns : nothing
+'------------------------------------------------------------------------------
+
+FUNCTION SendSMSTest(sPhoneNumber AS STRING, sMessage AS STRING) AS LONG
+LOCAL s1 ,s2,s3,s4 AS STRING
+LOCAL l1 AS LONG
+
+IF lComportfileModem=0 THEN
+    MSGBOX "Comport Not open",,$AppTitle
+    EXIT FUNCTION
+END IF
+
+
+'----------------------------------------AT+CGMI? - read Modem ID
+s1="AT"+$CRLF
+COMM SEND #lComportFileModem,s1
+s1=ReadComport
+IF LEN(s1)=0 THEN
+    MSGBOX "Modem Not OK?",,$AppTitle
+    EXIT FUNCTION
+END IF
+'----------------------------------------AT+CGMI? - read Modem ID
+s1="ATD+91"+sPhoneNumber+";"+$CRLF
+COMM SEND #lComportFileModem,s1
+SLEEP %WAITDELAY
+s1=ReadComport
+IF LEN(s1)=0 THEN
+    MSGBOX "Modem Not OK?",,$AppTitle
+    EXIT FUNCTION
+END IF
+MSGBOX "Phone number "+sPhoneNumber+" Called",,$AppTitle
+
+'----------------------------------------AT+CGMI? - read Modem ID
+s1="AT+CGMI?"+$CRLF
+COMM SEND #lComportFileModem,s1
+SLEEP %WAITDELAY
+s1=ReadComport
+IF LEN(s1)=0 THEN
+    MSGBOX "Modem Not OK?",,$AppTitle
+    EXIT FUNCTION
+END IF
+'----------------------------------------AT+CGMM? - read model ID
+s1="AT+CGMM?"+$CRLF
+COMM SEND #lComportFileModem,s1
+SLEEP %WAITDELAY
+s1=ReadComport
+IF LEN(s1)=0 THEN
+    MSGBOX "Modem Not OK?",,$AppTitle
+    EXIT FUNCTION
+END IF
+
+'----------------------------------------AT+CGMR? - read Revision
+s1="AT+CGMR?"+$CRLF
+COMM SEND #lComportFileModem,s1
+SLEEP %WAITDELAY
+s1=ReadComport
+IF LEN(s1)=0 THEN
+    MSGBOX "Modem Not OK?",,$AppTitle
+    EXIT FUNCTION
+END IF
+
+'----------------------------------------AT+CGSN? - read Product Serial number
+s1="AT+CGSN?"+$CRLF
+COMM SEND #lComportFileModem,s1
+SLEEP %WAITDELAY
+s1=ReadComport
+IF LEN(s1)=0 THEN
+    MSGBOX "Modem Not OK?",,$AppTitle
+    EXIT FUNCTION
+END IF
+
+'----------------------------------------AT+CFSN? - read Factory serial number
+s1="AT+CFSN?"+$CRLF
+COMM SEND #lComportFileModem,s1
+SLEEP %WAITDELAY
+s1=ReadComport
+IF LEN(s1)=0 THEN
+    MSGBOX "Modem Not OK?",,$AppTitle
+    EXIT FUNCTION
+END IF
+
+'----------------------------------------AT+CSQ? - read Signal Strength
+s1="AT+CSQ?"+$CRLF
+COMM SEND #lComportFileModem,s1
+SLEEP %WAITDELAY
+s1=ReadComport
+IF LEN(s1)=0 THEN
+    MSGBOX "Modem Not OK?",,$AppTitle
+    EXIT FUNCTION
+END IF
+
+'----------------------------------------AT+COPS? - read operator name
+s1="AT+COPS?"+$CRLF
+COMM SEND #lComportFileModem,s1
+SLEEP %WAITDELAY*5
+s1=ReadComport
+IF LEN(s1)=0 THEN
+    MSGBOX "Modem Not OK?",,$AppTitle
+    EXIT FUNCTION
+END IF
+
+'----------------------------------------AT+CMGS= - Send SMS
+s1="AT+CMGS=+91"+sPhoneNumber+", "+sMessage+$CRLF
+COMM SEND #lComportFileModem,s1
+SLEEP %WAITDELAY*10
+s1=ReadComport
+IF LEN(s1)=0 THEN
+    MSGBOX "Modem Not OK?",,$AppTitle
+    EXIT FUNCTION
+END IF
+
+
+
+END FUNCTION
+'------------------------------------------------------------------------------
+'FUNCTION WaitForDataFromModem AS LONG
+' wait until some response comes from modem
+' input: none
+' returns : 0 - if no response received from modem
+'           1 - if response received from modem. REsponse is in sModemReceiveData variable
+'------------------------------------------------------------------------------
+FUNCTION WaitForDataFromModem AS LONG
+LOCAL l1,l2 AS LONG
+l1=0:l2=0
+DO WHILE(1)
+    SLEEP 100
+    INCR l1
+    IF l1>%WAITDELAY THEN EXIT DO
+    IF LEN(sModemReceiveData)>0 THEN
+        SLEEP 10            ' wait for some more time to receive all data
+        l2=1
+        EXIT DO
+    END IF
+
+LOOP
+
+FUNCTION=l2
+END FUNCTION
+'-----------------------------------------------
+'FUNCTION ReadComport() AS LONG
+' reads comport
+' 'input: none
+' reurns : a null string if no data form comport else, string received on comport
+'-----------------------------------------------
+FUNCTION ReadComport() AS STRING
+LOCAL s1 AS STRING
+LOCAL l1 AS LONG
+
+    IF WaitforDataFromModem>0 THEN
+        s1=sModemReceiveData:sModemReceiveData=""
+        FUNCTION=s1
+    ELSE
+        s1=""
+        FUNCTION=s1
+    END IF
+
+END FUNCTION
+'------------------------------------------------------------------------------
