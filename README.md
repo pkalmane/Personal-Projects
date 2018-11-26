@@ -21,7 +21,7 @@ Using the combined dataset from UNICEF, WHO and World Bank to understand the spr
 ### Analysis of survey household data of Bageshwar district, Uttarakhand by Swaniti Organization:
 Tested out various unsupervised clustering algorthims to find the segments based on economic profile. Also, analysis for imputation of missing average annual income. Using the above analysis to picth for investment for philanthropic organizations.
 
-### Global Fund for Children:
+### <a href="https://github.com/DataKind-DC/GFC">Global Fund for Children:</a>
 Currently working with other Data Scientists in Washington DC on the data provided by GFC on the organizational development of grantee partners and inputs provided by GFC during the course of the funding relationship to better understand the link between the services and funding provided and self-reported changes in organizational health. This will assist GFC to better understand which interventions are most successful at contributing to positive organizational changes. As a result, GFC can more effectively target services to enable organizations that aim to improve the lives of children and youth affected by poverty, injustice and discrimination worldwide to be more effective at their work.
 
 ## Micro & Hobby (Projects):
