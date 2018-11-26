@@ -38,7 +38,7 @@ Used non-linear programming methods and sensitivity analysis by identifying fact
 
 ### Clinton Global Initiative challenge:
 
-###<a href="https://challenges.openideo.com/profiles/pkalmane1">OpenIDEO Challenges:</a> 
+### <a href="https://challenges.openideo.com/profiles/pkalmane1">OpenIDEO Challenges:</a> 
 Participated in various social innovation challenges hosted by OpenIDEO. Design prototypes for challenges and collaborate with other OpenIDEO participants from across the world.
 
 
