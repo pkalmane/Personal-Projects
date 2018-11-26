@@ -2,6 +2,7 @@
 
 Repository containing portfolio of data science projects, online social challenges completed by me for academic, self learning, and hobby purposes. Presented in the form of R markdown files or plain WordPad.
 
+# Contents
 ## Data Analysis and Visualizations:
 
 > Tools used : R, Tableau
