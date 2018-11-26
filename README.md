@@ -49,7 +49,8 @@ Case Study: Assessment of market potential of a nitrate remediation product for 
 Built an app prototype for PerScholas, a NPO that provides tuition-free technology training to unemployed or underemployed adults for careers as IT professionals. 
 
 
-### <a href="http://pkalmane.blogspot.com">Personal blog</a> 
+### <a href="http://pkalmane.blogspot.com">Personal blog</a>:
+A work in progress, an attempt to capture my opinions, thoughts on the topics close to my heart. 
 
 
 
