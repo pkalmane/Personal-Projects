@@ -33,7 +33,7 @@ Using Linear Regression to test the relationship between Height & Weight.
 ### ML with Decision Trees and Random forest: 
 Using Decision trees and Random Forests to analyze the BigMart sales and find out the sales of each product at a particular store.
 
-### Optimization technique to predict top 10 zip locations for real estate in the US:
+### <a href="https://github.com/pkalmane/Portfolio/tree/master/Optimization%20Techniques">Optimization technique to predict top 10 zip locations for real estate in the US:
 Used non-linear programming methods and sensitivity analysis by identifying factors & constraints to predict top 10 locations as the US for "most favourable" real estate locations
 
 ### Clinton Global Initiative challenge:
