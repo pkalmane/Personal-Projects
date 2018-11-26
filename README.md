@@ -50,7 +50,7 @@ Built an app prototype for PerScholas, a NPO that provides tuition-free technolo
 
 
 ### <a href="http://pkalmane.blogspot.com">Personal blog</a>:
-A work in progress, an attempt to capture my opinions, thoughts on the topics close to my heart. 
+A work in progress attempt to capture opinions, thoughts on the topics close to my heart. 
 
 
 
