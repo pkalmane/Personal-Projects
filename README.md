@@ -38,18 +38,18 @@ Used non-linear programming methods and sensitivity analysis by identifying fact
 
 ### Clinton Global Initiative challenge:
 
-### OpenIDEO Challenges:
+###<a href="https://challenges.openideo.com/profiles/pkalmane1">OpenIDEO Challenges:</a> 
 Participated in various social innovation challenges hosted by OpenIDEO. Design prototypes for challenges and collaborate with other OpenIDEO participants from across the world.
-https://challenges.openideo.com/profiles/pkalmane1
+
 
 ### Master Scholar Research program:
 Case Study: Assessment of market potential of a nitrate remediation product for a company called BioChem Insights along with the chemical engineering department at Rensellaer Polytechnic Institute.
 
-### NBCU Social Hack:
+### <a href="https://www.youtube.com/watch?v=9N5e4Ahz3FM">NBCU Social Hack:</a>
 Built an app prototype for PerScholas, a NPO that provides tuition-free technology training to unemployed or underemployed adults for careers as IT professionals. 
-https://www.youtube.com/watch?v=9N5e4Ahz3FM
 
-### Link to Personal blog: 
-http://pkalmane.blogspot.com
+
+### <a href="http://pkalmane.blogspot.com">Personal blog</a> 
+
 
 
