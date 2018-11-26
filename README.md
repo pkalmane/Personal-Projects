@@ -24,7 +24,7 @@ Tested out various unsupervised clustering algorthims to find the segments based
 ### Global Fund for Children:
 Currently working with other Data Scientists in Washington DC on the data provided by GFC on the organizational development of grantee partners and inputs provided by GFC during the course of the funding relationship to better understand the link between the services and funding provided and self-reported changes in organizational health. This will assist GFC to better understand which interventions are most successful at contributing to positive organizational changes. As a result, GFC can more effectively target services to enable organizations that aim to improve the lives of children and youth affected by poverty, injustice and discrimination worldwide to be more effective at their work.
 
-## Micro Projects & Hobby Projects:
+## Micro & Hobby (Projects):
 
 >Tools used: Excel, R, Tableau
 ### ML with Linear Regression: 
