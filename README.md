@@ -36,7 +36,12 @@ Using Decision trees and Random Forests to analyze the BigMart sales and find ou
 ### <a href="https://github.com/pkalmane/Portfolio/tree/master/Optimization%20Techniques" target="_blank">Optimization technique to predict top 10 zip locations for real estate in the US:</a>
 Used non-linear programming methods and sensitivity analysis by identifying factors & constraints to predict top 10 locations as the US for "most favourable" real estate locations
 
-### Clinton Global Initiative challenge:
+### <a href="https://github.com/pkalmane/Portfolio/blob/master/Proposal_final.docx" target="_blank">Clinton Global Initiative challenge:</a>
+Building on the successful model of the Clinton Global Initiative, President Clinton launched the Clinton Global Initiative University (CGI U) in 2007 to engage the next generation of leaders on college campuses around the world.
+
+Each year, CGI U hosts a meeting where students, university representatives, topic experts, and celebrities come together to discuss and develop innovative solutions to pressing global challenges. Students create their own Commitments to Action that address issues on campus, in local communities, or around the world. 
+
+After submitting my proposal, I was selected along with 2 other students to represent Rensselaer Polytechnic Institute on the global stage, where over 3000 students across the world meet every year. A fabulous experience, indeed!
 
 ### <a href="https://challenges.openideo.com/profiles/pkalmane1" target="_blank">OpenIDEO Challenges:</a> 
 Participated in various social innovation challenges hosted by OpenIDEO. Design prototypes for challenges and collaborate with other OpenIDEO participants from across the world.
