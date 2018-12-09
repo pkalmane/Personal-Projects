@@ -12,7 +12,7 @@ Tested out various regression techiques for the prediction of bike usage through
 ### AIRBNB new user bookings: 
 Prediction of top 5 destination countries for new users who sign up. Data analysis carried out to identify the factors that impact the choices of the new user the most.
 
-### Outmatch employee performance:
+### <a href= "https://github.com/pkalmane/Portfolio/tree/master/Outmatch" target="_blank"> Outmatch employee performance:</a>
 Predicted best fit employees for a organization by using historical employee performance data.
 
 ### <a href="https://github.com/pkalmane/Portfolio/blob/master/REPORT_CHILD_MALNUTRITION.docx" target="_blank">Child Malnutrition over the years, Quick insights:</a>
