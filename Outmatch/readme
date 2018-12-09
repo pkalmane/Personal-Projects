@@ -1,0 +1,4 @@
+Outmatch is a company based out of Texas that develops behavioral assessment applications for hiring employees. Outmatch aims at building winning teams by taking a data-driven approach to talent selection and development at all levels in its client’s organization. The service provided by Outmatch increases the Quality of hire, Exceptional guest service and performance. It decreases the turnover and time to hire.
+If we closely study the Outmatch data given to us, the data consists of performance ratings given by supervisor to the subordinates based on various qualities. All this contributes to the overall rating. 
+•	Outmatch currently follows linear regression in order to score the employees based on the weights. Our team’s hypothesis is that using the individual assessment item/ raw scores will yield better results compared to the existing approach. 
+•	The team also aims at finding the accuracy of the existing model. 
