@@ -18,7 +18,7 @@ Predicted best fit employees for a organization by using historical employee per
 ### <a href="https://github.com/pkalmane/Portfolio/blob/master/REPORT_CHILD_MALNUTRITION.docx" target="_blank">Child Malnutrition over the years, Quick insights:</a>
 Using the combined dataset from UNICEF, WHO and World Bank to understand the spread of malnourishment in various regions, economic conditions and time.
 
-### Analysis of survey household data of Bageshwar district, Uttarakhand by Swaniti Organization:
+### <a href="https://github.com/pkalmane/Portfolio/tree/master/Survey%20DataAnalysis" target="_blank"> of survey household data of Bageshwar district, Uttarakhand by Swaniti Organization:</a>
 Tested out various unsupervised clustering algorthims to find the segments based on economic profile. Also, analysis for imputation of missing average annual income. Using the above analysis to picth for investment for philanthropic organizations.
 
 ### <a href="https://github.com/DataKind-DC/GFC" target="_blank">Global Fund for Children:</a>
