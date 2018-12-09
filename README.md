@@ -47,7 +47,7 @@ After submitting my proposal, I was selected along with 2 other students to repr
 Participated in various social innovation challenges hosted by OpenIDEO. Design prototypes for challenges and collaborate with other OpenIDEO participants from across the world.
 
 
-### Master Scholar Research program:
+### <a href="https://github.com/pkalmane/Portfolio/tree/master/Master%20Scholar%20Research%20program" target="_blank">Master Scholar Research program:</a>
 Case Study: Assessment of market potential of a nitrate remediation product for a company called BioChem Insights along with the chemical engineering department at Rensellaer Polytechnic Institute.
 
 ### <a href="https://www.youtube.com/watch?v=9N5e4Ahz3FM" target="_blank">NBCU Social Hack:</a>
