@@ -1,0 +1,1 @@
+Tested out various unsupervised clustering algorthims to find the segments based on economic profile. Also, analysis for imputation of missing average annual income. Using the above analysis to picth for investment for philanthropic organizations.
