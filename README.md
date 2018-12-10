@@ -53,6 +53,12 @@ Case Study: Assessment of market potential of a nitrate remediation product for 
 ### <a href="https://www.youtube.com/watch?v=9N5e4Ahz3FM" target="_blank">NBCU Social Hack:</a>
 Built an app prototype for PerScholas, a NPO that provides tuition-free technology training to unemployed or underemployed adults for careers as IT professionals. 
 
+### Volunteering activities
+Active volunteer in the East Program Area Group at Child Rights and You between 2013-2016. Led a team consisting of 12 volunteers in conducting medical camps that served over 160 childen within the age grooup of 0-12. Followed up on the critical cases and ensured getting medical attention for over 3 cases post the medical camp in 2016. Instrumental in conducting walkathons, wall-painting activities, workshops for children in government schools in order to increase awareness about child rights, safety and education.
+
+Volunteer at eVidyaLoka, translating curriculum into Kannada from English.
+
+Co-Led the CSR team at AIG. Conducted donation drives during Nepal floods, Chennai floods, blood donation drives, plantation drives, fundraising events for SoCare Ind, a non profit organization working with orphaned and underprivileged children in Bangalore. 
 
 ### <a href="http://pkalmane.blogspot.com" target="_blank">Personal blog</a>:
 A work in progress attempt to capture opinions, thoughts on the topics close to my heart. 
