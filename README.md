@@ -41,7 +41,7 @@ Building on the successful model of the Clinton Global Initiative, President Cli
 
 Each year, CGI U hosts a meeting where students, university representatives, topic experts, and celebrities come together to discuss and develop innovative solutions to pressing global challenges. Students create their own Commitments to Action that address issues on campus, in local communities, or around the world. 
 
-After submitting my proposal, I was selected along with 2 other students to represent Rensselaer Polytechnic Institute on the global stage, where over 3000 students across the world meet every year. A fabulous experience, indeed!
+After submitting my proposal on Poverty Alleviation monitoring tool, I was selected along with 2 other students to represent Rensselaer Polytechnic Institute on the global stage, where over 3000 students across the world meet every year. A fabulous experience, indeed!
 
 ### <a href="https://challenges.openideo.com/profiles/pkalmane1" target="_blank">OpenIDEO Challenges:</a> 
 Participated in various social innovation challenges hosted by OpenIDEO. Design prototypes for challenges and collaborate with other OpenIDEO participants from across the world.
