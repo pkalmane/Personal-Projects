@@ -1,6 +1,6 @@
 # Portfolio
 
-Repository containing portfolio of data science projects, online social challenges completed by me for academic, self learning, and hobby purposes. Presented in the form of R markdown files or plain WordPad.
+Repository containing portfolio of data science projects, online social challenges completed by me for academic, self learning, and hobby purposes. Presented in the form of R markdown files or plain WordPad. Click on the topics, to learn more. 
 
 # Contents
 ## Data Analysis and Visualizations:
