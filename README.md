@@ -6,11 +6,11 @@ Repository containing portfolio of data science projects, online social challeng
 ## Data Analysis and Visualizations:
 
 > Tools used : R, Tableau
-### NYC Citi Bike Data:
+### <a href = "https://github.com/pkalmane/Portfolio/tree/master/CitiBike", target="_blank"> NYC Citi Bike Data:</a>
 Tested out various regression techiques for the prediction of bike usage through bike-sharing services in New York City. Data analysis carried out to identify the factors that impact the usage and the associations between various factors.
 
-### AIRBNB new user bookings: 
-Prediction of top 5 destination countries for new users who sign up. Data analysis carried out to identify the factors that impact the choices of the new user the most.
+### <a href = "https://github.com/pkalmane/Portfolio/tree/master/Airbnb%20New%20users" target="_blank"> AIRBNB new user bookings: </a> 
+Data analysis carried out to identify the factors that impact the choices of the new user for AIRBNB the most.
 
 ### <a href= "https://github.com/pkalmane/Portfolio/tree/master/Outmatch" target="_blank"> Outmatch employee performance:</a>
 Predicted best fit employees for a organization by using historical employee performance data.
