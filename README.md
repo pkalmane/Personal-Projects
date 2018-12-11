@@ -27,11 +27,6 @@ Currently working with other Data Scientists in Washington DC on the data provid
 ## Micro & Hobby (Projects):
 
 >Tools used: Excel, R, Tableau
-### ML with Linear Regression: 
-Using Linear Regression to test the relationship between Height & Weight.
-
-### ML with Decision Trees and Random forest: 
-Using Decision trees and Random Forests to analyze the BigMart sales and find out the sales of each product at a particular store.
 
 ### <a href="https://github.com/pkalmane/Portfolio/tree/master/Optimization%20Techniques" target="_blank">Optimization technique to predict top 10 zip locations for real estate in the US:</a>
 Used non-linear programming methods and sensitivity analysis by identifying factors & constraints to predict top 10 locations as the US for "most favourable" real estate locations
